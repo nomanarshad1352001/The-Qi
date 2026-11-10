@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Sparkles, HeartHandshake, Sprout } from 'lucide-react';
+import founderImage from '../assets/images/founder_lisa_li_1794350712064.jpg';
 
 export const FounderStory: React.FC = () => {
   return (
@@ -14,7 +15,7 @@ export const FounderStory: React.FC = () => {
               {/* Decorative subtle border frame */}
               <div className="relative rounded-2xl overflow-hidden border border-[#E8DFD8] shadow-sm bg-[#F3ECE5] aspect-3/4">
                 <img
-                  src="/src/assets/images/founder_lisa_li_1794350712064.jpg"
+                  src={founderImage}
                   alt="Lisa Li, Founder of The Qi, in her NYC botanical studio"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover object-center"

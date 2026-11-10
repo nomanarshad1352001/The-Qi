@@ -14,6 +14,7 @@ import { MobileStickyBuyBar } from './components/MobileStickyBuyBar';
 import { CartDrawer } from './components/CartDrawer';
 import { CoaModal } from './components/CoaModal';
 import { ProductVariantId, PurchaseType, CartItem } from './types';
+import heroImage from './assets/images/the_qi_hero_render_1794350711469.jpg';
 
 export default function App() {
   const [selectedVariant, setSelectedVariant] = useState<ProductVariantId>('3-month');
@@ -34,7 +35,7 @@ export default function App() {
       originalPrice: 114.00,
       quantity: 1,
       subscriptionFrequency: '90',
-      image: '/src/assets/images/the_qi_hero_render_1794350711469.jpg',
+      image: heroImage,
       shipDate: 'Ships Early Feb 2027 (Batch 01)',
     },
   ]);
@@ -74,7 +75,7 @@ export default function App() {
             originalPrice,
             quantity,
             subscriptionFrequency: isThreeMonth ? '90' : '30',
-            image: '/src/assets/images/the_qi_hero_render_1794350711469.jpg',
+            image: heroImage,
             shipDate: 'Ships Early Feb 2027 (Batch 01)',
           },
         ];

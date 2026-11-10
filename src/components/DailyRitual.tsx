@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Droplets, Sparkles, Wind, RotateCcw, Clock, Thermometer } from 'lucide-react';
+import steepingImage from '../assets/images/steeping_daily_ritual_1794350713554.jpg';
 
 export const DailyRitual: React.FC = () => {
   const [activeStep, setActiveStep] = useState(0);
@@ -63,7 +64,7 @@ export const DailyRitual: React.FC = () => {
           <div className="lg:col-span-6">
             <div className="relative rounded-2xl overflow-hidden border border-[#E8DFD8] bg-[#F3ECE5] shadow-sm aspect-4/3 group">
               <img
-                src="/src/assets/images/steeping_daily_ritual_1794350713554.jpg"
+                src={steepingImage}
                 alt="Hot water being poured from kettle into glass mug blooming a whole purple lotus flower"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-500"

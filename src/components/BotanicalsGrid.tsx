@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Botanical } from '../types';
 import { Sparkles, Info, CheckCircle2, ChevronRight } from 'lucide-react';
+import flatlayImage from '../assets/images/six_botanicals_flatlay_1794350714342.jpg';
 
 export const BotanicalsGrid: React.FC = () => {
   const [selectedBotanical, setSelectedBotanical] = useState<Botanical | null>(null);
@@ -100,7 +101,7 @@ export const BotanicalsGrid: React.FC = () => {
         {/* Flatlay Photography Banner */}
         <div className="relative rounded-2xl overflow-hidden border border-[#E8DFD8] mb-12 bg-[#F5EFEB] aspect-16/9 max-h-[380px] group">
           <img
-            src="/src/assets/images/six_botanicals_flatlay_1794350714342.jpg"
+            src={flatlayImage}
             alt="Handmade ceramic dishes displaying the six whole botanicals on natural linen"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center group-hover:scale-[1.01] transition-transform duration-500"

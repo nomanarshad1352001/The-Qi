@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Star, ShieldCheck, Truck, RefreshCw, Sparkles, Check, Heart, Clock, Award } from 'lucide-react';
 import { ProductVariantId, PurchaseType } from '../types';
+import heroImg from '../assets/images/the_qi_hero_render_1794350711469.jpg';
+import steepingImg from '../assets/images/steeping_daily_ritual_1794350713554.jpg';
+import flatlayImg from '../assets/images/six_botanicals_flatlay_1794350714342.jpg';
+import founderImg from '../assets/images/founder_lisa_li_1794350712064.jpg';
 
 interface HeroPDPProps {
   selectedVariant: ProductVariantId;
@@ -25,22 +29,22 @@ export const HeroPDP: React.FC<HeroPDPProps> = ({
 
   const images = [
     {
-      src: '/src/assets/images/the_qi_hero_render_1794350711469.jpg',
+      src: heroImg,
       alt: 'The Qi Whole-Flower Daily Longevity Elixir Ritual Set with blooming yellow Royal Chrysanthemum',
       caption: 'Batch 01 Limited Edition Canister & Artisanal Glassware',
     },
     {
-      src: '/src/assets/images/steeping_daily_ritual_1794350713554.jpg',
+      src: steepingImg,
       alt: 'Blooming whole blue lotus flower being steeped in clear glass cup',
       caption: 'Mindful 3-minute whole blossom steep',
     },
     {
-      src: '/src/assets/images/six_botanicals_flatlay_1794350714342.jpg',
+      src: flatlayImg,
       alt: 'Six sacred botanicals in handmade ceramic dishes on raw linen',
       caption: 'Six single-origin whole botanicals',
     },
     {
-      src: '/src/assets/images/founder_lisa_li_1794350712064.jpg',
+      src: founderImg,
       alt: 'Founder Lisa Li holding brewed flower tea in NYC botanical studio',
       caption: 'Formulated in NYC by Founder Lisa Li',
     },
